@@ -17,7 +17,8 @@ export default function () {
         // And that the user *must* accept them
         if (
             (app.current.matches(IndexPage) || m.route.get() === '/') &&
-            app.forum.attribute('clarkwinkelmannFollowTagsShouldPrompt')
+            app.forum.attribute('clarkwinkelmannFollowTagsShouldPrompt') &&
+            app.session.user.isEmailConfirmed()
         ) {
             // This code is affected by the blue backdrop of death https://github.com/flarum/core/issues/1813
             // This can't be reliably reproduced, but happens mostly on Firefox
