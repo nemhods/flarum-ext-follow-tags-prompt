@@ -1,5 +1,5 @@
 {
-    "name": "nemhods/flarum-ext-follow-tags-prompt",
+    "name": "clarkwinkelmann/flarum-ext-follow-tags-prompt",
     "description": "Prompt user for tags to follow after registration",
     "keywords": [
         "flarum"
